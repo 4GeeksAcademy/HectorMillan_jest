@@ -1,4 +1,4 @@
-// Declaramos una función con el nombre exacto "formEuroToDollar"
+// Declaramos una función para ejecutar la conversión Euro a Dolar
 const fromEuroToDollar = function(valueInEuro) {
     // Convertimos el valor a dólares
     let valueInDollar = valueInEuro * 1.07;
@@ -6,6 +6,24 @@ const fromEuroToDollar = function(valueInEuro) {
     return valueInDollar;
 }
 
+// Declaramos una función para ejecutar la conversión Dolar a Yen
+const fromDollarToYen = function(valueInDollar) {
+    // Convertimos el valor a dólares
+    let valueInYen = valueInDollar * 146;
+    // Retornamos el valor en dólares
+    return valueInYen;
+}
+
+
+// Declaramos una función para ejecutar la conversión Yen a Libra
+const fromYenToPound = function(valueInYen) {
+    // Convertimos el valor a dólares
+    let valueInPound = valueInYen * 0.0055;
+    // Retornamos el valor en dólares
+    return valueInPound;
+}
+ 
+// Declaramos una función para ejecutar la conversión Dolar a Euro
 const fromDollarToEuro = function(valueInDollar) {
     // Convertimos el valor a dólares
     let valueInEuro = valueInDollar * 0.935;
@@ -13,25 +31,11 @@ const fromDollarToEuro = function(valueInDollar) {
     return valueInEuro;
 }
 
-const fromDollarToYen = function(valueInDollar) {
-    // Convertimos el valor a dólares
-    let valueInYen = valueInDollar * 0.00684;
-    // Retornamos el valor en dólares
-    return valueInYen;
-}
-
-const fromYenToPound = function(valueInYen) {
-    // Convertimos el valor a dólares
-    let valueInPound = valueInYen * 0.0055;
-    // Retornamos el valor en dólares
-    return valueInPound;
-}
-
 
 
 
 // Esporta la funcion para usarla en otros archivos
-// (similar a la palabra clave "export" cuando se usa webpack)
+
 module.exports = { fromEuroToDollar, fromDollarToEuro,fromDollarToYen,fromYenToPound};
 
 
